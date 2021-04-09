@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552D30D4261FF01B0085F7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D30D3261FF01B0085F7D4 /* AppDelegate.swift */; };
+		552D30D7261FF01B0085F7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552D30D5261FF01B0085F7D4 /* Main.storyboard */; };
+		552D30D9261FF01B0085F7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D30D8261FF01B0085F7D4 /* ViewController.swift */; };
+		552D30DB261FF01D0085F7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552D30DA261FF01D0085F7D4 /* Assets.xcassets */; };
+		552D30E2261FF01D0085F7D4 /* Notion Web Clipper Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 552D30E1261FF01D0085F7D4 /* Notion Web Clipper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		552D30E7261FF01D0085F7D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D30E6261FF01D0085F7D4 /* Cocoa.framework */; };
+		552D30EA261FF01D0085F7D4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D30E9261FF01D0085F7D4 /* SafariWebExtensionHandler.swift */; };
+		552D3121261FF01E0085F7D4 /* inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D30F7261FF01E0085F7D4 /* inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff */; };
+		552D3122261FF01E0085F7D4 /* mobile.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D30F8261FF01E0085F7D4 /* mobile.js */; };
+		552D3123261FF01E0085F7D4 /* 43750bf0ad89dc8bccfb.worker.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D30F9261FF01E0085F7D4 /* 43750bf0ad89dc8bccfb.worker.js */; };
+		552D3124261FF01E0085F7D4 /* @stripe in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FA261FF01E0085F7D4 /* @stripe */; };
+		552D3125261FF01E0085F7D4 /* mermaid.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FB261FF01E0085F7D4 /* mermaid.js */; };
+		552D3126261FF01E0085F7D4 /* iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FC261FF01E0085F7D4 /* iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff */; };
+		552D3127261FF01E0085F7D4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FD261FF01E0085F7D4 /* index.html */; };
+		552D3128261FF01E0085F7D4 /* react-pdf.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FE261FF01E0085F7D4 /* react-pdf.js */; };
+		552D3129261FF01E0085F7D4 /* vendors~pdfjsWorker.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D30FF261FF01E0085F7D4 /* vendors~pdfjsWorker.js */; };
+		552D312A261FF01E0085F7D4 /* vendors~@stripe in Resources */ = {isa = PBXBuildFile; fileRef = 552D3100261FF01E0085F7D4 /* vendors~@stripe */; };
+		552D312B261FF01E0085F7D4 /* inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3101261FF01E0085F7D4 /* inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff */; };
+		552D312C261FF01E0085F7D4 /* formula-menu.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3102261FF01E0085F7D4 /* formula-menu.js */; };
+		552D312D261FF01E0085F7D4 /* inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3103261FF01E0085F7D4 /* inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff */; };
+		552D312E261FF01E0085F7D4 /* postRender.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3104261FF01E0085F7D4 /* postRender.js */; };
+		552D312F261FF01E0085F7D4 /* app.css in Resources */ = {isa = PBXBuildFile; fileRef = 552D3105261FF01E0085F7D4 /* app.css */; };
+		552D3130261FF01E0085F7D4 /* lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3106261FF01E0085F7D4 /* lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff */; };
+		552D3131261FF01E0085F7D4 /* mobile~postRender.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3107261FF01E0085F7D4 /* mobile~postRender.js */; };
+		552D3132261FF01E0085F7D4 /* inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3108261FF01E0085F7D4 /* inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff */; };
+		552D3133261FF01E0085F7D4 /* iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3109261FF01E0085F7D4 /* iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff */; };
+		552D3134261FF01E0085F7D4 /* vendors~mermaid.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D310A261FF01E0085F7D4 /* vendors~mermaid.js */; };
+		552D3135261FF01E0085F7D4 /* _metadata in Resources */ = {isa = PBXBuildFile; fileRef = 552D310B261FF01E0085F7D4 /* _metadata */; };
+		552D3136261FF01E0085F7D4 /* lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D310C261FF01E0085F7D4 /* lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff */; };
+		552D3137261FF01E0085F7D4 /* 33fd21fd0d89020a6efd.worker.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D310D261FF01E0085F7D4 /* 33fd21fd0d89020a6efd.worker.js */; };
+		552D3138261FF01E0085F7D4 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D310E261FF01E0085F7D4 /* main.js */; };
+		552D3139261FF01E0085F7D4 /* iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D310F261FF01E0085F7D4 /* iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff */; };
+		552D313A261FF01E0085F7D4 /* iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3110261FF01E0085F7D4 /* iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff */; };
+		552D313B261FF01E0085F7D4 /* emoji-korean.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3111261FF01E0085F7D4 /* emoji-korean.js */; };
+		552D313C261FF01E0085F7D4 /* lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3112261FF01E0085F7D4 /* lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff */; };
+		552D313D261FF01E0085F7D4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 552D3113261FF01E0085F7D4 /* manifest.json */; };
+		552D313E261FF01E0085F7D4 /* 16.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3114261FF01E0085F7D4 /* 16.js */; };
+		552D313F261FF01E0085F7D4 /* lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D3115261FF01E0085F7D4 /* lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff */; };
+		552D3140261FF01E0085F7D4 /* vendors~main.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3116261FF01E0085F7D4 /* vendors~main.js */; };
+		552D3141261FF01E0085F7D4 /* twitter.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3117261FF01E0085F7D4 /* twitter.js */; };
+		552D3142261FF01E0085F7D4 /* vendors~react-pdf.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3118261FF01E0085F7D4 /* vendors~react-pdf.js */; };
+		552D3143261FF01E0085F7D4 /* vendors~katex.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D3119261FF01E0085F7D4 /* vendors~katex.js */; };
+		552D3144261FF01E0085F7D4 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 552D311A261FF01E0085F7D4 /* _locales */; };
+		552D3145261FF01E0085F7D4 /* vendors~formula-menu.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D311B261FF01E0085F7D4 /* vendors~formula-menu.js */; };
+		552D3146261FF01E0085F7D4 /* 0.js in Resources */ = {isa = PBXBuildFile; fileRef = 552D311C261FF01E0085F7D4 /* 0.js */; };
+		552D3147261FF01E0085F7D4 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D311D261FF01E0085F7D4 /* icon-128.png */; };
+		552D3148261FF01E0085F7D4 /* icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D311E261FF01E0085F7D4 /* icon-32.png */; };
+		552D3149261FF01E0085F7D4 /* permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff in Resources */ = {isa = PBXBuildFile; fileRef = 552D311F261FF01E0085F7D4 /* permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff */; };
+		552D314A261FF01E0085F7D4 /* vendors~main.css in Resources */ = {isa = PBXBuildFile; fileRef = 552D3120261FF01E0085F7D4 /* vendors~main.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		552D30E3261FF01D0085F7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552D30C7261FF01B0085F7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 552D30E0261FF01D0085F7D4;
+			remoteInfo = "Notion Web Clipper Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		552D30F2261FF01D0085F7D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				552D30E2261FF01D0085F7D4 /* Notion Web Clipper Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		552D30CF261FF01B0085F7D4 /* Notion Web Clipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notion Web Clipper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552D30D2261FF01B0085F7D4 /* Notion_Web_Clipper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notion_Web_Clipper.entitlements; sourceTree = "<group>"; };
+		552D30D3261FF01B0085F7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		552D30D6261FF01B0085F7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		552D30D8261FF01B0085F7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		552D30DA261FF01D0085F7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		552D30DC261FF01D0085F7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552D30E1261FF01D0085F7D4 /* Notion Web Clipper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notion Web Clipper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552D30E6261FF01D0085F7D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		552D30E9261FF01D0085F7D4 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		552D30EB261FF01D0085F7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552D30EC261FF01D0085F7D4 /* Notion_Web_Clipper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notion_Web_Clipper_Extension.entitlements; sourceTree = "<group>"; };
+		552D30F7261FF01E0085F7D4 /* inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff"; path = "../../notion-safari-0.2.4_0/inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff"; sourceTree = "<group>"; };
+		552D30F8261FF01E0085F7D4 /* mobile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = mobile.js; path = "../../notion-safari-0.2.4_0/mobile.js"; sourceTree = "<group>"; };
+		552D30F9261FF01E0085F7D4 /* 43750bf0ad89dc8bccfb.worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = 43750bf0ad89dc8bccfb.worker.js; path = "../../notion-safari-0.2.4_0/43750bf0ad89dc8bccfb.worker.js"; sourceTree = "<group>"; };
+		552D30FA261FF01E0085F7D4 /* @stripe */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "@stripe"; path = "../../notion-safari-0.2.4_0/@stripe"; sourceTree = "<group>"; };
+		552D30FB261FF01E0085F7D4 /* mermaid.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = mermaid.js; path = "../../notion-safari-0.2.4_0/mermaid.js"; sourceTree = "<group>"; };
+		552D30FC261FF01E0085F7D4 /* iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff"; path = "../../notion-safari-0.2.4_0/iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff"; sourceTree = "<group>"; };
+		552D30FD261FF01E0085F7D4 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = "../../notion-safari-0.2.4_0/index.html"; sourceTree = "<group>"; };
+		552D30FE261FF01E0085F7D4 /* react-pdf.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "react-pdf.js"; path = "../../notion-safari-0.2.4_0/react-pdf.js"; sourceTree = "<group>"; };
+		552D30FF261FF01E0085F7D4 /* vendors~pdfjsWorker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~pdfjsWorker.js"; path = "../../notion-safari-0.2.4_0/vendors~pdfjsWorker.js"; sourceTree = "<group>"; };
+		552D3100261FF01E0085F7D4 /* vendors~@stripe */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "vendors~@stripe"; path = "../../notion-safari-0.2.4_0/vendors~@stripe"; sourceTree = "<group>"; };
+		552D3101261FF01E0085F7D4 /* inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff"; path = "../../notion-safari-0.2.4_0/inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff"; sourceTree = "<group>"; };
+		552D3102261FF01E0085F7D4 /* formula-menu.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "formula-menu.js"; path = "../../notion-safari-0.2.4_0/formula-menu.js"; sourceTree = "<group>"; };
+		552D3103261FF01E0085F7D4 /* inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff"; path = "../../notion-safari-0.2.4_0/inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff"; sourceTree = "<group>"; };
+		552D3104261FF01E0085F7D4 /* postRender.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = postRender.js; path = "../../notion-safari-0.2.4_0/postRender.js"; sourceTree = "<group>"; };
+		552D3105261FF01E0085F7D4 /* app.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = app.css; path = "../../notion-safari-0.2.4_0/app.css"; sourceTree = "<group>"; };
+		552D3106261FF01E0085F7D4 /* lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff"; path = "../../notion-safari-0.2.4_0/lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff"; sourceTree = "<group>"; };
+		552D3107261FF01E0085F7D4 /* mobile~postRender.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "mobile~postRender.js"; path = "../../notion-safari-0.2.4_0/mobile~postRender.js"; sourceTree = "<group>"; };
+		552D3108261FF01E0085F7D4 /* inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff"; path = "../../notion-safari-0.2.4_0/inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff"; sourceTree = "<group>"; };
+		552D3109261FF01E0085F7D4 /* iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff"; path = "../../notion-safari-0.2.4_0/iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff"; sourceTree = "<group>"; };
+		552D310A261FF01E0085F7D4 /* vendors~mermaid.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~mermaid.js"; path = "../../notion-safari-0.2.4_0/vendors~mermaid.js"; sourceTree = "<group>"; };
+		552D310B261FF01E0085F7D4 /* _metadata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _metadata; path = "../../notion-safari-0.2.4_0/_metadata"; sourceTree = "<group>"; };
+		552D310C261FF01E0085F7D4 /* lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff"; path = "../../notion-safari-0.2.4_0/lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff"; sourceTree = "<group>"; };
+		552D310D261FF01E0085F7D4 /* 33fd21fd0d89020a6efd.worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = 33fd21fd0d89020a6efd.worker.js; path = "../../notion-safari-0.2.4_0/33fd21fd0d89020a6efd.worker.js"; sourceTree = "<group>"; };
+		552D310E261FF01E0085F7D4 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = "../../notion-safari-0.2.4_0/main.js"; sourceTree = "<group>"; };
+		552D310F261FF01E0085F7D4 /* iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff"; path = "../../notion-safari-0.2.4_0/iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff"; sourceTree = "<group>"; };
+		552D3110261FF01E0085F7D4 /* iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff"; path = "../../notion-safari-0.2.4_0/iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff"; sourceTree = "<group>"; };
+		552D3111261FF01E0085F7D4 /* emoji-korean.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "emoji-korean.js"; path = "../../notion-safari-0.2.4_0/emoji-korean.js"; sourceTree = "<group>"; };
+		552D3112261FF01E0085F7D4 /* lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff"; path = "../../notion-safari-0.2.4_0/lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff"; sourceTree = "<group>"; };
+		552D3113261FF01E0085F7D4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../notion-safari-0.2.4_0/manifest.json"; sourceTree = "<group>"; };
+		552D3114261FF01E0085F7D4 /* 16.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = 16.js; path = "../../notion-safari-0.2.4_0/16.js"; sourceTree = "<group>"; };
+		552D3115261FF01E0085F7D4 /* lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff"; path = "../../notion-safari-0.2.4_0/lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff"; sourceTree = "<group>"; };
+		552D3116261FF01E0085F7D4 /* vendors~main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~main.js"; path = "../../notion-safari-0.2.4_0/vendors~main.js"; sourceTree = "<group>"; };
+		552D3117261FF01E0085F7D4 /* twitter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = twitter.js; path = "../../notion-safari-0.2.4_0/twitter.js"; sourceTree = "<group>"; };
+		552D3118261FF01E0085F7D4 /* vendors~react-pdf.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~react-pdf.js"; path = "../../notion-safari-0.2.4_0/vendors~react-pdf.js"; sourceTree = "<group>"; };
+		552D3119261FF01E0085F7D4 /* vendors~katex.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~katex.js"; path = "../../notion-safari-0.2.4_0/vendors~katex.js"; sourceTree = "<group>"; };
+		552D311A261FF01E0085F7D4 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = "../../notion-safari-0.2.4_0/_locales"; sourceTree = "<group>"; };
+		552D311B261FF01E0085F7D4 /* vendors~formula-menu.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "vendors~formula-menu.js"; path = "../../notion-safari-0.2.4_0/vendors~formula-menu.js"; sourceTree = "<group>"; };
+		552D311C261FF01E0085F7D4 /* 0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = 0.js; path = "../../notion-safari-0.2.4_0/0.js"; sourceTree = "<group>"; };
+		552D311D261FF01E0085F7D4 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128.png"; path = "../../notion-safari-0.2.4_0/icon-128.png"; sourceTree = "<group>"; };
+		552D311E261FF01E0085F7D4 /* icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-32.png"; path = "../../notion-safari-0.2.4_0/icon-32.png"; sourceTree = "<group>"; };
+		552D311F261FF01E0085F7D4 /* permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff"; path = "../../notion-safari-0.2.4_0/permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff"; sourceTree = "<group>"; };
+		552D3120261FF01E0085F7D4 /* vendors~main.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "vendors~main.css"; path = "../../notion-safari-0.2.4_0/vendors~main.css"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		552D30CC261FF01B0085F7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552D30DE261FF01D0085F7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552D30E7261FF01D0085F7D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		552D30C6261FF01B0085F7D4 = {
+			isa = PBXGroup;
+			children = (
+				552D30D1261FF01B0085F7D4 /* Notion Web Clipper */,
+				552D30E8261FF01D0085F7D4 /* Notion Web Clipper Extension */,
+				552D30E5261FF01D0085F7D4 /* Frameworks */,
+				552D30D0261FF01B0085F7D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		552D30D0261FF01B0085F7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				552D30CF261FF01B0085F7D4 /* Notion Web Clipper.app */,
+				552D30E1261FF01D0085F7D4 /* Notion Web Clipper Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552D30D1261FF01B0085F7D4 /* Notion Web Clipper */ = {
+			isa = PBXGroup;
+			children = (
+				552D30D2261FF01B0085F7D4 /* Notion_Web_Clipper.entitlements */,
+				552D30D3261FF01B0085F7D4 /* AppDelegate.swift */,
+				552D30D5261FF01B0085F7D4 /* Main.storyboard */,
+				552D30D8261FF01B0085F7D4 /* ViewController.swift */,
+				552D30DA261FF01D0085F7D4 /* Assets.xcassets */,
+				552D30DC261FF01D0085F7D4 /* Info.plist */,
+			);
+			path = "Notion Web Clipper";
+			sourceTree = "<group>";
+		};
+		552D30E5261FF01D0085F7D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552D30E6261FF01D0085F7D4 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		552D30E8261FF01D0085F7D4 /* Notion Web Clipper Extension */ = {
+			isa = PBXGroup;
+			children = (
+				552D30F6261FF01E0085F7D4 /* Resources */,
+				552D30E9261FF01D0085F7D4 /* SafariWebExtensionHandler.swift */,
+				552D30EB261FF01D0085F7D4 /* Info.plist */,
+				552D30EC261FF01D0085F7D4 /* Notion_Web_Clipper_Extension.entitlements */,
+			);
+			path = "Notion Web Clipper Extension";
+			sourceTree = "<group>";
+		};
+		552D30F6261FF01E0085F7D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				552D30F7261FF01E0085F7D4 /* inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff */,
+				552D30F8261FF01E0085F7D4 /* mobile.js */,
+				552D30F9261FF01E0085F7D4 /* 43750bf0ad89dc8bccfb.worker.js */,
+				552D30FA261FF01E0085F7D4 /* @stripe */,
+				552D30FB261FF01E0085F7D4 /* mermaid.js */,
+				552D30FC261FF01E0085F7D4 /* iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff */,
+				552D30FD261FF01E0085F7D4 /* index.html */,
+				552D30FE261FF01E0085F7D4 /* react-pdf.js */,
+				552D30FF261FF01E0085F7D4 /* vendors~pdfjsWorker.js */,
+				552D3100261FF01E0085F7D4 /* vendors~@stripe */,
+				552D3101261FF01E0085F7D4 /* inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff */,
+				552D3102261FF01E0085F7D4 /* formula-menu.js */,
+				552D3103261FF01E0085F7D4 /* inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff */,
+				552D3104261FF01E0085F7D4 /* postRender.js */,
+				552D3105261FF01E0085F7D4 /* app.css */,
+				552D3106261FF01E0085F7D4 /* lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff */,
+				552D3107261FF01E0085F7D4 /* mobile~postRender.js */,
+				552D3108261FF01E0085F7D4 /* inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff */,
+				552D3109261FF01E0085F7D4 /* iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff */,
+				552D310A261FF01E0085F7D4 /* vendors~mermaid.js */,
+				552D310B261FF01E0085F7D4 /* _metadata */,
+				552D310C261FF01E0085F7D4 /* lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff */,
+				552D310D261FF01E0085F7D4 /* 33fd21fd0d89020a6efd.worker.js */,
+				552D310E261FF01E0085F7D4 /* main.js */,
+				552D310F261FF01E0085F7D4 /* iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff */,
+				552D3110261FF01E0085F7D4 /* iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff */,
+				552D3111261FF01E0085F7D4 /* emoji-korean.js */,
+				552D3112261FF01E0085F7D4 /* lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff */,
+				552D3113261FF01E0085F7D4 /* manifest.json */,
+				552D3114261FF01E0085F7D4 /* 16.js */,
+				552D3115261FF01E0085F7D4 /* lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff */,
+				552D3116261FF01E0085F7D4 /* vendors~main.js */,
+				552D3117261FF01E0085F7D4 /* twitter.js */,
+				552D3118261FF01E0085F7D4 /* vendors~react-pdf.js */,
+				552D3119261FF01E0085F7D4 /* vendors~katex.js */,
+				552D311A261FF01E0085F7D4 /* _locales */,
+				552D311B261FF01E0085F7D4 /* vendors~formula-menu.js */,
+				552D311C261FF01E0085F7D4 /* 0.js */,
+				552D311D261FF01E0085F7D4 /* icon-128.png */,
+				552D311E261FF01E0085F7D4 /* icon-32.png */,
+				552D311F261FF01E0085F7D4 /* permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff */,
+				552D3120261FF01E0085F7D4 /* vendors~main.css */,
+			);
+			name = Resources;
+			path = "Notion Web Clipper Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		552D30CE261FF01B0085F7D4 /* Notion Web Clipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552D30F3261FF01D0085F7D4 /* Build configuration list for PBXNativeTarget "Notion Web Clipper" */;
+			buildPhases = (
+				552D30CB261FF01B0085F7D4 /* Sources */,
+				552D30CC261FF01B0085F7D4 /* Frameworks */,
+				552D30CD261FF01B0085F7D4 /* Resources */,
+				552D30F2261FF01D0085F7D4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				552D30E4261FF01D0085F7D4 /* PBXTargetDependency */,
+			);
+			name = "Notion Web Clipper";
+			productName = "Notion Web Clipper";
+			productReference = 552D30CF261FF01B0085F7D4 /* Notion Web Clipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		552D30E0261FF01D0085F7D4 /* Notion Web Clipper Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552D30EF261FF01D0085F7D4 /* Build configuration list for PBXNativeTarget "Notion Web Clipper Extension" */;
+			buildPhases = (
+				552D30DD261FF01D0085F7D4 /* Sources */,
+				552D30DE261FF01D0085F7D4 /* Frameworks */,
+				552D30DF261FF01D0085F7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notion Web Clipper Extension";
+			productName = "Notion Web Clipper Extension";
+			productReference = 552D30E1261FF01D0085F7D4 /* Notion Web Clipper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		552D30C7261FF01B0085F7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					552D30CE261FF01B0085F7D4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					552D30E0261FF01D0085F7D4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 552D30CA261FF01B0085F7D4 /* Build configuration list for PBXProject "Notion Web Clipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 552D30C6261FF01B0085F7D4;
+			productRefGroup = 552D30D0261FF01B0085F7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				552D30CE261FF01B0085F7D4 /* Notion Web Clipper */,
+				552D30E0261FF01D0085F7D4 /* Notion Web Clipper Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		552D30CD261FF01B0085F7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552D30DB261FF01D0085F7D4 /* Assets.xcassets in Resources */,
+				552D30D7261FF01B0085F7D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552D30DF261FF01D0085F7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552D3127261FF01E0085F7D4 /* index.html in Resources */,
+				552D3136261FF01E0085F7D4 /* lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff in Resources */,
+				552D312B261FF01E0085F7D4 /* inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff in Resources */,
+				552D3131261FF01E0085F7D4 /* mobile~postRender.js in Resources */,
+				552D313F261FF01E0085F7D4 /* lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff in Resources */,
+				552D3145261FF01E0085F7D4 /* vendors~formula-menu.js in Resources */,
+				552D3139261FF01E0085F7D4 /* iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff in Resources */,
+				552D3125261FF01E0085F7D4 /* mermaid.js in Resources */,
+				552D312D261FF01E0085F7D4 /* inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff in Resources */,
+				552D3146261FF01E0085F7D4 /* 0.js in Resources */,
+				552D3126261FF01E0085F7D4 /* iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff in Resources */,
+				552D3141261FF01E0085F7D4 /* twitter.js in Resources */,
+				552D3132261FF01E0085F7D4 /* inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff in Resources */,
+				552D314A261FF01E0085F7D4 /* vendors~main.css in Resources */,
+				552D3129261FF01E0085F7D4 /* vendors~pdfjsWorker.js in Resources */,
+				552D313D261FF01E0085F7D4 /* manifest.json in Resources */,
+				552D3123261FF01E0085F7D4 /* 43750bf0ad89dc8bccfb.worker.js in Resources */,
+				552D3137261FF01E0085F7D4 /* 33fd21fd0d89020a6efd.worker.js in Resources */,
+				552D312C261FF01E0085F7D4 /* formula-menu.js in Resources */,
+				552D3130261FF01E0085F7D4 /* lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff in Resources */,
+				552D3122261FF01E0085F7D4 /* mobile.js in Resources */,
+				552D3144261FF01E0085F7D4 /* _locales in Resources */,
+				552D3128261FF01E0085F7D4 /* react-pdf.js in Resources */,
+				552D3138261FF01E0085F7D4 /* main.js in Resources */,
+				552D312E261FF01E0085F7D4 /* postRender.js in Resources */,
+				552D313B261FF01E0085F7D4 /* emoji-korean.js in Resources */,
+				552D3124261FF01E0085F7D4 /* @stripe in Resources */,
+				552D313E261FF01E0085F7D4 /* 16.js in Resources */,
+				552D3135261FF01E0085F7D4 /* _metadata in Resources */,
+				552D3133261FF01E0085F7D4 /* iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff in Resources */,
+				552D3147261FF01E0085F7D4 /* icon-128.png in Resources */,
+				552D312F261FF01E0085F7D4 /* app.css in Resources */,
+				552D3121261FF01E0085F7D4 /* inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff in Resources */,
+				552D312A261FF01E0085F7D4 /* vendors~@stripe in Resources */,
+				552D3149261FF01E0085F7D4 /* permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff in Resources */,
+				552D3148261FF01E0085F7D4 /* icon-32.png in Resources */,
+				552D3143261FF01E0085F7D4 /* vendors~katex.js in Resources */,
+				552D3134261FF01E0085F7D4 /* vendors~mermaid.js in Resources */,
+				552D3142261FF01E0085F7D4 /* vendors~react-pdf.js in Resources */,
+				552D313A261FF01E0085F7D4 /* iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff in Resources */,
+				552D3140261FF01E0085F7D4 /* vendors~main.js in Resources */,
+				552D313C261FF01E0085F7D4 /* lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		552D30CB261FF01B0085F7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552D30D9261FF01B0085F7D4 /* ViewController.swift in Sources */,
+				552D30D4261FF01B0085F7D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552D30DD261FF01D0085F7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552D30EA261FF01D0085F7D4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		552D30E4261FF01D0085F7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 552D30E0261FF01D0085F7D4 /* Notion Web Clipper Extension */;
+			targetProxy = 552D30E3261FF01D0085F7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		552D30D5261FF01B0085F7D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552D30D6261FF01B0085F7D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		552D30ED261FF01D0085F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		552D30EE261FF01D0085F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		552D30F0261FF01D0085F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notion Web Clipper Extension/Notion_Web_Clipper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notion Web Clipper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Notion-Web-Clipper.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		552D30F1261FF01D0085F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notion Web Clipper Extension/Notion_Web_Clipper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notion Web Clipper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Notion-Web-Clipper.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		552D30F4261FF01D0085F7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Notion Web Clipper/Notion_Web_Clipper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Notion Web Clipper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Notion-Web-Clipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		552D30F5261FF01D0085F7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Notion Web Clipper/Notion_Web_Clipper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Notion Web Clipper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Notion-Web-Clipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		552D30CA261FF01B0085F7D4 /* Build configuration list for PBXProject "Notion Web Clipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D30ED261FF01D0085F7D4 /* Debug */,
+				552D30EE261FF01D0085F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552D30EF261FF01D0085F7D4 /* Build configuration list for PBXNativeTarget "Notion Web Clipper Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D30F0261FF01D0085F7D4 /* Debug */,
+				552D30F1261FF01D0085F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552D30F3261FF01D0085F7D4 /* Build configuration list for PBXNativeTarget "Notion Web Clipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D30F4261FF01D0085F7D4 /* Debug */,
+				552D30F5261FF01D0085F7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 552D30C7261FF01B0085F7D4 /* Project object */;
+}
